@@ -32,6 +32,7 @@ syn keyword sqlKeyword	format delimited fields terminated by collection items ex
 syn keyword sqlKeyword	stored sequencefile partitioned data local inpath overwrite clustered buckets sorted
 syn keyword sqlKeyword	keys extended textfile location distribute directory tablesample using reduce lateral
 syn keyword sqlKeyword	coalesce case when
+syn keyword sqlKeyword  serde inputformat outputformat partition
 
 
 syn keyword sqlOperator	not and or < <= == >= > <> !=
@@ -49,7 +50,7 @@ syn keyword sqlOperator	covar_pop covar_samp corr percentile percentil_approx
 syn keyword sqlOperator	histogram_numeric collect_set inline explode
 syn keyword sqlOperator	exp ln log10 log2 log pow sqrt bin hex unhex conv
 syn keyword sqlOperator	abs pmod sin asin cos acos tan atan degrees radians
-syn keyword sqlOperator	positive negative sign e pi binary
+syn keyword sqlOperator	positive negative sign e pi
 syn keyword sqlOperator	map_keys map_values array_contains sort_array
 syn keyword sqlOperator	unix_timestamp dayofmonth hour minute second weekofyear
 syn keyword sqlOperator	datediff date_add date_sub from_utc_timestamp to_utc_timestamp
@@ -66,7 +67,7 @@ syn keyword sqlStatement rename revoke rollback savepoint select set
 syn keyword sqlStatement truncate update describe load use
 
 syn keyword sqlType	tinyint smallint int bigint float duouble boolean string
-syn keyword sqlType	array map struct named_struct create_union
+syn keyword sqlType	array map struct named_struct create_union long binary
 
 syn match hiveVar     "hive\.[a-zA-Z.]\+"
 syn match hiveVar     "mapred\.[a-zA-Z.]\+"
