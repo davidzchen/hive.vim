@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.hql setf hive
+au BufNewFile,BufRead *.hql,*.q setf hive
